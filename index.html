@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUMIERE - Fine Dining</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">LUMIERE</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-logo">LUMIERE</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#reservation">Reserve</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <a href="#reservation" class="nav-cta">Book a Table</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" onclick="closeMobile()">Home</a></li>
+      <li><a href="#menu" onclick="closeMobile()">Menu</a></li>
+      <li><a href="#tables" onclick="closeMobile()">Tables</a></li>
+      <li><a href="#reservation" onclick="closeMobile()">Reserve</a></li>
+      <li><a href="#reviews" onclick="closeMobile()">Reviews</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" alt="Fine Dining" class="hero-img"/>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content reveal">
+      <p class="hero-sub">Est. 2010 &mdash; International Fine Dining</p>
+      <h1 class="hero-title">An Experience<br/><em>Beyond the Plate</em></h1>
+      <p class="hero-desc">Where every dish tells a story, every sip is a journey,<br/>and every moment is crafted with excellence.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="#reservation" class="btn-secondary">Reserve Now</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT STRIP ========== -->
+  <section class="about-strip">
+    <div class="strip-item reveal">
+      <span class="strip-num">12+</span>
+      <span class="strip-label">Years of Excellence</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item reveal">
+      <span class="strip-num">40+</span>
+      <span class="strip-label">Signature Dishes</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item reveal">
+      <span class="strip-num">3</span>
+      <span class="strip-label">Michelin Stars</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item reveal">
+      <span class="strip-num">98%</span>
+      <span class="strip-label">Guest Satisfaction</span>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section id="menu">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Culinary Artistry</p>
+      <h2 class="section-title">Our Menu</h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="menu-tabs reveal">
+      <button class="tab-btn active" data-tab="food">Food Menu</button>
+      <button class="tab-btn" data-tab="drinks">Drink Menu</button>
+    </div>
+
+    <!-- FOOD MENU -->
+    <div class="menu-panel active" id="tab-food">
+      <!-- Starters -->
+      <div class="menu-category reveal">
+        <h3 class="cat-title">Starters</h3>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=600&q=80" alt="Seared Scallops"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Seared Scallops</h4>
+                <span class="price">$28</span>
+              </div>
+              <p>Pan-seared diver scallops with cauliflower puree, pancetta crisp &amp; truffle oil.</p>
+              <span class="badge">Chef's Pick</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=600&q=80" alt="Foie Gras Torchon"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Foie Gras Torchon</h4>
+                <span class="price">$34</span>
+              </div>
+              <p>Duck liver torchon with brioche toast, Sauternes jelly &amp; microgreens.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=600&q=80" alt="Oysters Rockefeller"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Oysters Rockefeller</h4>
+                <span class="price">$22</span>
+              </div>
+              <p>Six Kumamoto oysters with spinach, Pernod butter &amp; breadcrumb gratin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Course -->
+      <div class="menu-category reveal">
+        <h3 class="cat-title">Main Course</h3>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" alt="Wagyu Beef Tenderloin"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Wagyu Beef Tenderloin</h4>
+                <span class="price">$89</span>
+              </div>
+              <p>A5 Wagyu, roasted bone marrow, pomme puree &amp; bordelaise reduction.</p>
+              <span class="badge">Signature</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Lobster Thermidor"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Lobster Thermidor</h4>
+                <span class="price">$74</span>
+              </div>
+              <p>Whole Maine lobster with cognac cream, gruyere crust &amp; tarragon.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Duck Confit"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Duck Confit</h4>
+                <span class="price">$52</span>
+              </div>
+              <p>Slow-cooked duck leg, lentil cassoulet, cherry gastrique &amp; crispy skin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-category reveal">
+        <h3 class="cat-title">Desserts</h3>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Chocolate Fondant"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Valrhona Chocolate Fondant</h4>
+                <span class="price">$18</span>
+              </div>
+              <p>72% dark chocolate lava cake with vanilla bean ice cream &amp; gold flake.</p>
+              <span class="badge">Best Seller</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Creme Brulee"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Lavender Creme Brulee</h4>
+                <span class="price">$16</span>
+              </div>
+              <p>Provencal lavender infused custard with caramelized sugar &amp; fresh berries.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=600&q=80" alt="Tart"/>
+            </div>
+            <div class="menu-card-info">
+              <div class="menu-card-top">
+                <h4>Mango Passionfruit Tart</h4>
+                <span class="price">$15</span>
+              </div>
+              <p>Tropical curd in almond pastry shell with coconut chantilly &amp; mango gel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRINK MENU -->
+    <div class="menu-panel" id="tab-drinks">
+      <div class="menu-category reveal">
+        <h3 class="cat-title">Cocktails</h3>
+        <div class="drink-list">
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Lumiere Signature Old Fashioned</h4>
+              <p>Bourbon, smoked orange bitters, demerara, rosemary smoke</p>
+            </div>
+            <span class="price">$22</span>
+          </div>
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Garden of Eden</h4>
+              <p>Hendricks Gin, elderflower, cucumber, lime, basil foam</p>
+            </div>
+            <span class="price">$19</span>
+          </div>
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Black Truffle Negroni</h4>
+              <p>Campari, sweet vermouth, gin, truffle oil, orange twist</p>
+            </div>
+            <span class="price">$24</span>
+          </div>
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Sakura Martini</h4>
+              <p>Sake, lychee liqueur, cherry blossom syrup, lemon</p>
+            </div>
+            <span class="price">$21</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category reveal">
+        <h3 class="cat-title">Wine Selection</h3>
+        <div class="drink-list">
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Chateau Margaux 2018</h4>
+              <p>Bordeaux, France &mdash; Full-bodied, blackcurrant, cedar</p>
+            </div>
+            <span class="price">$380/btl</span>
+          </div>
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Dom Perignon 2013</h4>
+              <p>Champagne, France &mdash; Brioche, white peach, mineral</p>
+            </div>
+            <span class="price">$295/btl</span>
+          </div>
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Opus One 2019</h4>
+              <p>Napa Valley, USA &mdash; Dark fruit, tobacco, violet</p>
+            </div>
+            <span class="price">$420/btl</span>
+          </div>
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Puligny-Montrachet 2020</h4>
+              <p>Burgundy, France &mdash; Crisp, hazelnut, stone fruit</p>
+            </div>
+            <span class="price">$145/btl</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category reveal">
+        <h3 class="cat-title">Non-Alcoholic</h3>
+        <div class="drink-list">
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Sparkling Elderflower Lemonade</h4>
+              <p>Fresh lemon, elderflower cordial, sparkling water, mint</p>
+            </div>
+            <span class="price">$9</span>
+          </div>
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Virgin Spiced Sangria</h4>
+              <p>Grape juice, cinnamon, star anise, orange, berries</p>
+            </div>
+            <span class="price">$10</span>
+          </div>
+          <div class="drink-item">
+            <div class="drink-info">
+              <h4>Artisan Cold Brew Coffee</h4>
+              <p>Single-origin Ethiopian Yirgacheffe, 24hr cold-steeped</p>
+            </div>
+            <span class="price">$8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TABLE LAYOUT ========== -->
+  <section id="tables">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Floor Plan</p>
+      <h2 class="section-title">Table Layout</h2>
+      <div class="title-line"></div>
+      <p class="section-desc">Select a table to check availability. Click to highlight your preference.</p>
+    </div>
+
+    <div class="floor-wrapper reveal">
+      <div class="floor-plan">
+        <!-- Legend -->
+        <div class="floor-legend">
+          <span class="legend-dot available"></span> Available
+          <span class="legend-dot occupied"></span> Occupied
+          <span class="legend-dot selected"></span> Selected
+        </div>
+
+        <!-- Restaurant floor -->
+        <div class="floor-grid">
+
+          <!-- Top row: window seats -->
+          <div class="floor-section window-section">
+            <div class="window-bar">
+              <div class="window-pane"></div>
+              <div class="window-pane"></div>
+              <div class="window-pane"></div>
+            </div>
+            <div class="table-row">
+              <div class="table-unit window-table" data-table="W1" data-seats="2">
+                <div class="table-shape round small"><span>W1</span></div>
+                <div class="seat top"></div><div class="seat bottom"></div>
+                <div class="table-tooltip">Window Table W1 &bull; 2 Seats</div>
+              </div>
+              <div class="table-unit window-table" data-table="W2" data-seats="2">
+                <div class="table-shape round small"><span>W2</span></div>
+                <div class="seat top"></div><div class="seat bottom"></div>
+                <div class="table-tooltip">Window Table W2 &bull; 2 Seats</div>
+              </div>
+              <div class="table-unit window-table" data-table="W3" data-seats="2">
+                <div class="table-shape round small"><span>W3</span></div>
+                <div class="seat top"></div><div class="seat bottom"></div>
+                <div class="table-tooltip">Window Table W3 &bull; 2 Seats</div>
+              </div>
+              <div class="table-unit window-table occupied" data-table="W4" data-seats="2">
+                <div class="table-shape round small"><span>W4</span></div>
+                <div class="seat top"></div><div class="seat bottom"></div>
+                <div class="table-tooltip">Window Table W4 &bull; Occupied</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle main area -->
+          <div class="floor-section main-section">
+            <!-- Left booths -->
+            <div class="booth-column">
+              <div class="table-unit booth-table" data-table="B1" data-seats="4">
+                <div class="booth-back"></div>
+                <div class="table-shape rect"><span>B1</span></div>
+                <div class="table-tooltip">Booth B1 &bull; 4 Seats</div>
+              </div>
+              <div class="table-unit booth-table occupied" data-table="B2" data-seats="4">
+                <div class="booth-back"></div>
+                <div class="table-shape rect"><span>B2</span></div>
+                <div class="table-tooltip">Booth B2 &bull; Occupied</div>
+              </div>
+              <div class="table-unit booth-table" data-table="B3" data-seats="4">
+                <div class="booth-back"></div>
+                <div class="table-shape rect"><span>B3</span></div>
+                <div class="table-tooltip">Booth B3 &bull; 4 Seats</div>
+              </div>
+            </div>
+
+            <!-- Center tables -->
+            <div class="center-tables">
+              <div class="center-row">
+                <div class="table-unit" data-table="C1" data-seats="4">
+                  <div class="table-shape round medium"><span>C1</span></div>
+                  <div class="seat top"></div><div class="seat bottom"></div>
+                  <div class="seat left-s"></div><div class="seat right-s"></div>
+                  <div class="table-tooltip">Center C1 &bull; 4 Seats</div>
+                </div>
+                <div class="table-unit" data-table="C2" data-seats="4">
+                  <div class="table-shape round medium"><span>C2</span></div>
+                  <div class="seat top"></div><div class="seat bottom"></div>
+                  <div class="seat left-s"></div><div class="seat right-s"></div>
+                  <div class="table-tooltip">Center C2 &bull; 4 Seats</div>
+                </div>
+                <div class="table-unit occupied" data-table="C3" data-seats="4">
+                  <div class="table-shape round medium"><span>C3</span></div>
+                  <div class="seat top"></div><div class="seat bottom"></div>
+                  <div class="seat left-s"></div><div class="seat right-s"></div>
+                  <div class="table-tooltip">Center C3 &bull; Occupied</div>
+                </div>
+              </div>
+              <div class="center-row">
+                <div class="table-unit" data-table="C4" data-seats="6">
+                  <div class="table-shape round large"><span>C4</span></div>
+                  <div class="seat top"></div><div class="seat bottom"></div>
+                  <div class="seat left-s"></div><div class="seat right-s"></div>
+                  <div class="table-tooltip">Center C4 &bull; 6 Seats</div>
+                </div>
+                <div class="table-unit" data-table="C5" data-seats="6">
+                  <div class="table-shape round large"><span>C5</span></div>
+                  <div class="seat top"></div><div class="seat bottom"></div>
+                  <div class="seat left-s"></div><div class="seat right-s"></div>
+                  <div class="table-tooltip">Center C5 &bull; 6 Seats</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right private area -->
+            <div class="private-column">
+              <div class="private-label">Private Dining</div>
+              <div class="table-unit private-table" data-table="P1" data-seats="8">
+                <div class="table-shape rect large-rect"><span>P1</span></div>
+                <div class="seat top"></div><div class="seat top t2"></div>
+                <div class="seat bottom"></div><div class="seat bottom b2"></div>
+                <div class="seat left-s"></div><div class="seat right-s"></div>
+                <div class="table-tooltip">Private P1 &bull; 8 Seats</div>
+              </div>
+              <div class="table-unit private-table occupied" data-table="P2" data-seats="8">
+                <div class="table-shape rect large-rect"><span>P2</span></div>
+                <div class="seat top"></div><div class="seat top t2"></div>
+                <div class="seat bottom"></div><div class="seat bottom b2"></div>
+                <div class="seat left-s"></div><div class="seat right-s"></div>
+                <div class="table-tooltip">Private P2 &bull; Occupied</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bar counter bottom -->
+          <div class="floor-section bar-section">
+            <div class="bar-counter">
+              <span class="bar-label">Bar Counter</span>
+              <div class="bar-stools">
+                <div class="table-unit bar-stool" data-table="BAR1" data-seats="1"><div class="stool-shape"><span>1</span></div><div class="table-tooltip">Bar Seat 1</div></div>
+                <div class="table-unit bar-stool" data-table="BAR2" data-seats="1"><div class="stool-shape"><span>2</span></div><div class="table-tooltip">Bar Seat 2</div></div>
+                <div class="table-unit bar-stool occupied" data-table="BAR3" data-seats="1"><div class="stool-shape"><span>3</span></div><div class="table-tooltip">Bar Seat 3 &bull; Occupied</div></div>
+                <div class="table-unit bar-stool" data-table="BAR4" data-seats="1"><div class="stool-shape"><span>4</span></div><div class="table-tooltip">Bar Seat 4</div></div>
+                <div class="table-unit bar-stool" data-table="BAR5" data-seats="1"><div class="stool-shape"><span>5</span></div><div class="table-tooltip">Bar Seat 5</div></div>
+                <div class="table-unit bar-stool occupied" data-table="BAR6" data-seats="1"><div class="stool-shape"><span>6</span></div><div class="table-tooltip">Bar Seat 6 &bull; Occupied</div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Selected info -->
+        <div class="selected-info" id="selectedInfo">
+          <span id="selectedText">Click a table to select it for reservation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESERVATION ========== -->
+  <section id="reservation">
+    <div class="reservation-wrapper">
+      <div class="reservation-img reveal">
+        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&q=80" alt="Restaurant Interior"/>
+        <div class="res-img-overlay">
+          <blockquote>"Reserve your seat at the finest table in the city."</blockquote>
+        </div>
+      </div>
+      <div class="reservation-form-wrap reveal">
+        <p class="section-eyebrow">Make a Reservation</p>
+        <h2 class="section-title">Book Your Table</h2>
+        <div class="title-line left"></div>
+
+        <form id="reservationForm" class="res-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="resName" placeholder="John Smith" required/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" id="resPhone" placeholder="+1 234 567 8900" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="resEmail" placeholder="john@example.com" required/>
+            </div>
+            <div class="form-group">
+              <label>Number of Guests</label>
+              <select id="resGuests">
+                <option value="">Select guests</option>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6+ Guests</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date</label>
+              <input type="date" id="resDate" required/>
+            </div>
+            <div class="form-group">
+              <label>Preferred Time</label>
+              <select id="resTime">
+                <option value="">Select time</option>
+                <option>12:00 PM</option>
+                <option>12:30 PM</option>
+                <option>1:00 PM</option>
+                <option>6:00 PM</option>
+                <option>6:30 PM</option>
+                <option>7:00 PM</option>
+                <option>7:30 PM</option>
+                <option>8:00 PM</option>
+                <option>8:30 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label>Table Preference <span class="optional">(auto-filled on selection)</span></label>
+            <input type="text" id="resTable" placeholder="Select from floor plan above" readonly/>
+          </div>
+          <div class="form-group full">
+            <label>Special Requests</label>
+            <textarea id="resNotes" rows="4" placeholder="Dietary requirements, special occasions, seating preferences..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">Confirm Reservation</span>
+            <span class="btn-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </button>
+        </form>
+
+        <!-- Success message -->
+        <div class="success-msg" id="successMsg">
+          <div class="success-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3>Reservation Confirmed!</h3>
+          <p>Thank you! We'll send a confirmation to your email shortly.<br/>We look forward to welcoming you at LUMIERE.</p>
+          <button class="btn-secondary small" onclick="resetForm()">Make Another Reservation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section id="reviews">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Guest Experiences</p>
+      <h2 class="section-title">What Our Guests Say</h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="reviews-slider reveal">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-text">"The Wagyu Tenderloin was a transcendent experience. Every detail, from the lighting to the plating, whispered luxury. LUMIERE has redefined fine dining for me."</p>
+          <div class="review-author">
+            <div class="author-avatar">ES</div>
+            <div>
+              <strong>Eleanor Sutton</strong>
+              <span>Food Critic, Bon Appetit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-text">"Our anniversary dinner was beyond perfection. The private table, the sommelier's wine pairing, the chocolate fondant... I've dined across four continents and LUMIERE stands alone."</p>
+          <div class="review-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <strong>Marcus &amp; Rachel Chen</strong>
+              <span>Regular Guests</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-text">"I hosted a business dinner here and LUMIERE made us look extraordinary. The service was impeccably attentive without being intrusive. The Lobster Thermidor alone earned the Michelin stars."</p>
+          <div class="review-author">
+            <div class="author-avatar">DW</div>
+            <div>
+              <strong>David Whitmore</strong>
+              <span>CEO, Whitmore Group</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-text">"The cocktail program is absolutely world-class. The Black Truffle Negroni is something I still dream about. The bar staff knew their craft and told the story of every ingredient."</p>
+          <div class="review-author">
+            <div class="author-avatar">AP</div>
+            <div>
+              <strong>Amelia Park</strong>
+              <span>Lifestyle Blogger</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn prev" id="prevBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn next" id="nextBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY STRIP ========== -->
+  <section class="gallery-strip">
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80" alt="Dining"/></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80" alt="Food"/></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80" alt="Plating"/></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1560053608-13721b0d74df?w=400&q=80" alt="Cocktail"/></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=400&q=80" alt="Interior"/></div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">LUMIERE</div>
+        <p>Where culinary artistry meets unforgettable hospitality. A dining experience unlike any other.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#reservation">Reserve</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Visit Us</h4>
+        <p>24 Rue de la Lumiere<br/>New York, NY 10001</p>
+        <p>+1 (212) 555-0182</p>
+        <p>hello@lumiere-dining.com</p>
+      </div>
+      <div class="footer-hours">
+        <h4>Hours</h4>
+        <p>Lunch: Mon-Fri<br/>12:00 PM - 3:00 PM</p>
+        <p>Dinner: Daily<br/>6:00 PM - 11:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 LUMIERE Fine Dining. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#">IG</a>
+        <a href="#">FB</a>
+        <a href="#">TW</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
